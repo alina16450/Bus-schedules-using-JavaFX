@@ -1,1 +1,4 @@
-# APM - Practical Examination Repository
+Simplified application for bus ticket purchasing which uses JavaFX to generate an interface that displays bus routes. Those bus routes contain departure and destination cities, as well as the respective times, price and available seats.
+This program is designed to give the ability to select a source city and a destination city, and be given the available routes for that trip. You can select which one to purchase, and enter a number of tickets to purchase, and be given a total amount.
+This program makes use of a relational database to store the information of those bus schedules, and the code that connects the Routes class to the SQL database can be found in the Repository. 
+This program also displays layered architecture, as the Routes class itself is found in the Domain, and there is a service package that handles all of the functions our program does. The gui package is responsible for creating and personalizing the JavaFX interface.
